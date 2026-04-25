@@ -227,8 +227,8 @@ def scan_dataset_split(root: Path, split: str):
 # Sidebar
 # ══════════════════════════════════════════════════════════════════════════════
 
-st.title("🎯 Object Detection")
-st.markdown("Detects **vehicles and humans** using your trained YOLO model.")
+st.title("🎯 Military Object Detection")
+st.markdown("Detects **Artillery, Missile, Radar, Rocket Launchers, Soldiers, Tanks, and Vehicles** using your trained YOLO model.")
 st.markdown("---")
 
 st.sidebar.title("⚙️ Settings")
