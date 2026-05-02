@@ -238,7 +238,6 @@ def main():
 if __name__ == "__main__":
     main()
     print("=" * 60)
-    print(f"\n  Trained model : {best_pt}")
     print(f"  Copy best.pt (and best.onnx if exported) to your app directory. The model detects 7 classes: Artillery, Missile, Radar, RocketLauncher, Soldier, Tank, Vehicle.")
     print(f"  then run:  streamlit run app.py")
     print("=" * 60)
