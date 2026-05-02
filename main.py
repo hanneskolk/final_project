@@ -21,7 +21,7 @@ from ultralytics import YOLO
 # ── Configuration ─────────────────────────────────────────────────────────────
 DEFAULT_SOURCE_DIR  = "raw_dataset"     # raw images + labels (input to dataset.py)
 DEFAULT_DATASET_DIR = "dataset"         # must match "path:" in data.yaml
-DEFAULT_OUTPUT_DIR  = "runs/detect/results"         # training run output
+DEFAULT_OUTPUT_DIR  = "/home/user/final_project/runs/detect/results"         # training run output
 DEFAULT_RUN_NAME    = "detector"        # subfolder inside results/
 
 # Base model to fine-tune. Options (smallest → largest):
