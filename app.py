@@ -43,7 +43,7 @@ def export_to_onnx(pt_path: str, onnx_path: str, imgsz: int = 640) -> bool:
     try:
         with st.spinner("⚙️ Exporting to ONNX…"):
             m = YOLO(pt_path)
-            m.export(format="onnx", imgsz=imgsz, half=False, dynamic=False)
+            m.export(format="onnx", imgsz=imgsz, half=True, dynamic=False)
         auto = pt_path.replace(".pt", ".onnx")
         if os.path.exists(auto) and auto != onnx_path:
             os.rename(auto, onnx_path)

@@ -121,7 +121,7 @@ def export_onnx(model: YOLO, imgsz: int = DEFAULT_IMGSZ) -> None:
     print("📦  ONNX EXPORT")
     print("=" * 60)
 
-    model.export(format="onnx", imgsz=imgsz, half=False, dynamic=False)
+    model.export(format="onnx", imgsz=imgsz, half=True, dynamic=False)
     print("✅  Exported to ONNX.")
     print("    Copy the .onnx file to your deployment directory and select")
     print("    'ONNX' as the backend in app.py.")
