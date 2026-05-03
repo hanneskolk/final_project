@@ -29,7 +29,7 @@ def export_to_tensorrt(pt_path: str, engine_path: str, imgsz: int = 640) -> bool
     try:
         with st.spinner("⚙️ Exporting to TensorRT…"):
             m = YOLO(pt_path)
-            m.export(format="engine", imgsz=imgsz, half=True)
+            m.export(format="engine", imgsz=imgsz, half=True, simplify=True)
         auto = pt_path.replace(".pt", ".engine")
         if os.path.exists(auto) and auto != engine_path:
             os.rename(auto, engine_path)
