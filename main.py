@@ -14,6 +14,7 @@
 #   python main.py --model yolo11s.pt --epochs 150 --batch 32
 
 import os
+os.environ["ULTRALYTICS_AUTO_INSTALL"] = "0"
 import argparse
 from pathlib import Path
 from ultralytics import YOLO

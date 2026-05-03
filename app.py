@@ -1,6 +1,9 @@
 # app.py - Object Detection (Vehicles & Humans) — Inference Only
 # Backends: TensorRT (.engine) → ONNX (.onnx) → PyTorch (.pt)
 
+import os
+os.environ["ULTRALYTICS_AUTO_INSTALL"] = "0"
+
 import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
