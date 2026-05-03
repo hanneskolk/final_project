@@ -31,7 +31,7 @@ DEFAULT_MODEL       = "yolo11s.pt"  # s-size recommended for 7-class multi-objec
 DEFAULT_EPOCHS      = 100
 DEFAULT_IMGSZ       = 640
 DEFAULT_BATCH       = 16
-DEFAULT_DEVICE      = 0       # 0 = first GPU; "cpu" for CPU-only machines
+DEFAULT_DEVICE      = "cpu"       # 0 = first GPU; "cpu" for CPU-only machines
 # ─────────────────────────────────────────────────────────────────────────────
 
 
