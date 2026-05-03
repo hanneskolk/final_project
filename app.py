@@ -314,10 +314,10 @@ with tab_img:
         col1, col2 = st.columns(2)
         with col1:
             st.subheader("Original")
-            st.image(image, use_container_width=True)
+            st.image(image, width='stretch')
         with col2:
             st.subheader("Detections")
-            st.image(annotated, use_container_width=True)
+            st.image(annotated, width='stretch')
 
         if len(boxes) > 0:
             st.markdown("---")
@@ -582,7 +582,7 @@ with tab_val:
                 cols = st.columns(len(row_imgs))
                 for col, (vis_img, fname, img_m) in zip(cols, row_imgs):
                     with col:
-                        st.image(vis_img, use_container_width=True)
+                        st.image(vis_img, width='stretch')
                         st.caption(
                             f"**{fname}**  \n"
                             f"P={img_m['precision']:.2f}  R={img_m['recall']:.2f}  "
